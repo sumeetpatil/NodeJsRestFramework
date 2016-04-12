@@ -24,7 +24,7 @@ Method:POST
 
 Content-Type:application/json
 
-Body:{"po":1, "potext":"po text"}
+Body:{"poid":1, "potext":"po text"}
 
 
 - For get create entry in rest api table and call rest api  as follows
@@ -53,7 +53,7 @@ Method:GET
 
 restId | rest_method | query_text | error_text | null_text
 --- | --- | --- | --- | --- 
-4 | testUpdate | PUT | update po SET po=;po where poid=:poid | error_text | text_for_null_values
+4 | testUpdate | PUT | update po SET potext=;potext where poid=:poid | error_text | text_for_null_values
 
 Url:/testUpdate?poid=1
 
@@ -61,5 +61,5 @@ Method:PUT
 
 Content-Type:application/json
 
-Body:{"po":"test"}
+Body:{"potext":"test"}
 
