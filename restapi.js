@@ -51,7 +51,7 @@ var generateApis = {
 		  var errTxt = errorText;
 		  var nullTxt = nullText;
 		  if(query.search(":")!=-1){
-		    	query = generateApis.generateQuery(req.query, query);
+		    	query = generateApis.generateQuery(req.query, query, ":");
 		  }
 		  
 		  console.log(query);
