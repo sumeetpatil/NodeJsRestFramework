@@ -42,7 +42,7 @@ Method:GET
  
 restId | url | rest_method | query_text | error_text | null_text
 --- | --- | --- | --- | --- | --- 
-3 | /testDelete?poid=1 | testDelete | DELETE | delete from po where poid:poid | error_text | text_for_null_values
+3 | /testDelete | testDelete | DELETE | delete from po where poid:poid | error_text | text_for_null_values
 
 Url:/testDelete?poid=1
 
