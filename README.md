@@ -52,8 +52,8 @@ Method:GET
 - For update create entry in rest api table and call rest api as follows
 
 restId | url | rest_method | query_text | error_text | null_text
---- | --- | --- | --- | --- 
-4 | /testUpdate?poid=1 | testUpdate | PUT | update po SET potext=;potext where poid=:poid | error_text | text_for_null_values
+--- | --- | --- | --- | --- | --- 
+4 | /testUpdate | testUpdate | PUT | update po SET potext=;potext where poid=:poid | error_text | text_for_null_values
 
 Url:/testUpdate?poid=1
 
